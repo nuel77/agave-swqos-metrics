@@ -12,4 +12,8 @@ calculates:
 - Receive window size
 - Maximum transaction capacity
 
-## Installation
+## Usage Example
+
+```bash
+cargo r -- --rpc-url https://api.mainnet-beta.solana.com --validator-key YOUR_VALIDATOR_PUBKEY
+
