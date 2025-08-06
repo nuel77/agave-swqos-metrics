@@ -46,6 +46,10 @@ async fn main() {
 
     let validator_key = Pubkey::from_str(&args.validator_key).unwrap();
     let our_stake = *stake_map.get(&validator_key).unwrap();
+    println!(
+        "Validator key: {:}, stake {:?}",
+        args.validator_key, our_stake
+    );
     let peer_type = ConnectionPeerType::Staked(our_stake);
     let max_uni_streams = compute_max_allowed_uni_streams(peer_type, total_stake);
     let receive_window: u64 = compute_recieve_window(max_stake, min_stake, peer_type)
