@@ -5,7 +5,9 @@ focusing on QUIC stream and receive window metrics.
 
 ## Description
 
-This tool helps validators understand their network QoS parameters based on their stake weight in the network. Because QUIC stream limits and receive window sizes are constrained, increasing stake beyond certain thresholds yields diminishing returns for improving a validator's network QoS, this tool calculates:
+This tool helps validators understand their network QoS parameters based on their stake weight in the network. Because QUIC stream limits and receive window sizes are constrained, increasing stake beyond certain thresholds yields diminishing returns for improving a validator's network QoS. In general each transaction requires to open a new uni directional stream to the leader to be sent. The `recieve_window` defines the combined max data in bytes a client can send from all its uni-streams.
+
+this tool calculates:
 
 - Maximum allowed concurrent uni-streams ([agave-implementation](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L465))
 - Receive window size ([agave-implementation](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L663))
