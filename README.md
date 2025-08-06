@@ -17,7 +17,7 @@ calculates:
 ```bash
 cargo r -- --rpc-url https://api.mainnet-beta.solana.com --validator-key YOUR_VALIDATOR_PUBKEY
 
-``
+```
 
 ## Sample Output
 <img width="1006" height="165" alt="image" src="https://github.com/user-attachments/assets/00b92153-f00b-4fb4-b5dd-e7c7c1d5fe04" />
