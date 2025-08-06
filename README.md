@@ -8,8 +8,8 @@ focusing on QUIC stream and receive window metrics.
 This tool helps validators understand their network QoS parameters based on their stake weight in the network. It
 calculates:
 
-- Maximum allowed concurrent uni-streams (based on [logic](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L465))
-- Receive window size (based on [logic](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L663))
+- Maximum allowed concurrent uni-streams ([agave-implementation](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L465))
+- Receive window size ([agave-implementation](https://github.com/anza-xyz/agave/blob/8854e65d81b8d74c6e55e292b93e3a66e72a4c81/streamer/src/nonblocking/quic.rs#L663))
 - Maximum transaction capacity
 
 ## Usage Example
