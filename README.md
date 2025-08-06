@@ -20,4 +20,4 @@ cargo r -- --rpc-url https://api.mainnet-beta.solana.com --validator-key YOUR_VA
 ```
 
 ## Sample Output
-<img width="1006" height="165" alt="image" src="https://github.com/user-attachments/assets/00b92153-f00b-4fb4-b5dd-e7c7c1d5fe04" />
+<img width="1055" height="229" alt="image" src="https://github.com/user-attachments/assets/78beafb8-5c66-4322-83fc-4dacc3fc72de" />
